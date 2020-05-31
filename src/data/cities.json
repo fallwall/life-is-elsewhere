@@ -1,0 +1,48 @@
+{
+  "visited": [
+    {
+      "id": 1,
+      "city": "Berlin",
+      "coordinates": "52°31′12″N 13°24′18″E",
+      "img": "https://i.imgur.com/dRWeNXJ.jpg",
+      "desc": "Europe's capital of EDM."
+    },
+    {
+      "id": 2,
+      "city": "Barcelona",
+      "coordinates": "41°23′N 2°11′E",
+      "img": "https://i.imgur.com/vvmqEzO.jpg",
+      "desc": "Cool buildings."
+    },
+    {
+      "id": 3,
+      "city": "Seville",
+      "coordinates": "37.39°N 5.99°W",
+      "img": "https://i.imgur.com/vvmqEzO.jpg",
+      "desc": "Jewish, Christian, Arabic mash. And clay stuff."
+    }
+  ],
+  "tobevisited": [
+    {
+      "id": 1,
+      "city": "Berlin",
+      "coordinates": "52°31′12″N 13°24′18″E",
+      "img": "https://i.imgur.com/dRWeNXJ.jpg",
+      "desc": "Europe's capital of EDM."
+    },
+    {
+      "id": 2,
+      "city": "Barcelona",
+      "coordinates": "41°23′N 2°11′E",
+      "img": "https://i.imgur.com/vvmqEzO.jpg",
+      "desc": "Cool buildings."
+    },
+    {
+      "id": 3,
+      "city": "Seville",
+      "coordinates": "37.39°N 5.99°W",
+      "img": "https://i.imgur.com/vvmqEzO.jpg",
+      "desc": "Jewish, Christian, Arabic mash. And clay stuff."
+    }
+  ]
+}
