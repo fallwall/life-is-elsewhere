@@ -18,7 +18,14 @@
       "id": 3,
       "city": "Seville",
       "coordinates": "37.39°N 5.99°W",
-      "img": "https://i.imgur.com/vvmqEzO.jpg",
+      "img": "https://i.imgur.com/mffJZXJ.jpg",
+      "desc": "Jewish, Christian, Arabic mash. And clay stuff."
+    },
+    {
+      "id": 4,
+      "city": "Seville",
+      "coordinates": "37.39°N 5.99°W",
+      "img": "https://i.imgur.com/mffJZXJ.jpg",
       "desc": "Jewish, Christian, Arabic mash. And clay stuff."
     }
   ],
