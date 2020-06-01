@@ -1,9 +1,18 @@
 import React from 'react';
+import ProgressBar from './ProgressBar';
 
-const TopNav=()=> {
+const TopNav = () => {
   return (
-    <div>
-      
+    <div className="topnav">
+      <div className="topnav-left">
+        name
+      </div>
+      <div className="topnav-right">
+        <ProgressBar />
+        <div className="topnav-right-title">
+          tittle
+        </div>
+      </div>
     </div>
   )
 }
