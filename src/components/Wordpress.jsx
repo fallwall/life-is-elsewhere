@@ -3,7 +3,7 @@ import PostExcerpt from './PostExcerpt';
 import { getPosts } from '../services/wordpress';
 
 class Wordpress extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       posts: []
@@ -23,7 +23,7 @@ class Wordpress extends React.Component {
   render() {
     return (
       <div>
-        {this.state.posts.map(p => <PostExcerpt key={p.ID}>{p}</PostExcerpt>)}
+        {this.state.posts.map(p => <PostExcerpt onClick={this.props.setPostID} key={p.ID}>{p}</PostExcerpt>)}
       </div>
     )
   }
