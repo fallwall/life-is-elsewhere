@@ -1,0 +1,11 @@
+.wordpress-excerpt-item {
+  text-align: center;
+  padding: 5%;
+  margin: 5% 10%;
+  background-color:lightblue;
+}
+
+.wordpress-excerpt-item-img img {
+  width: 40%;
+  margin: auto 30%;
+}

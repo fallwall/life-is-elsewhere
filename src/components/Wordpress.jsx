@@ -1,4 +1,5 @@
 import React from 'react';
+import PostExcerpt from './PostExcerpt';
 import { getPosts } from '../services/wordpress';
 
 class Wordpress extends React.Component {
@@ -12,8 +13,6 @@ class Wordpress extends React.Component {
   componentDidMount = async () => {
     const resp = await getPosts();
     const posts = resp["data"].posts;
-    // console.log(posts);
-    // above: array of obj
     this.setState({
       posts
     })
@@ -24,7 +23,7 @@ class Wordpress extends React.Component {
   render() {
     return (
       <div>
-        {this.state.posts.map(p => <div key={p.ID}>{p.title}</div>)}
+        {this.state.posts.map(p => <PostExcerpt key={p.ID}>{p}</PostExcerpt>)}
       </div>
     )
   }
