@@ -67,6 +67,26 @@
   z-index: 90;
 }
 
-/* progress bar */
-
 /* footer */
+.footer {
+  background-color: black;
+  color:white;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items:center;
+  justify-content: space-around;
+ }
+ 
+ .footer a {
+   color:white;
+   display: block;
+ }
+
+ .footer-sec-1, .footer-sec-2, .footer-sec-3,.footer-sec-4 {
+  margin: 3%;
+  padding: 5%;
+  width: 15%;
+  max-width: 400px;
+}
