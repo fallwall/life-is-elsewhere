@@ -20,11 +20,12 @@ class App extends Component {
     }
   }
 
-  setPostID = (postID) => {
+  setPostID = (ev) => {
+    ev.preventDefault();
     this.setState({
       isMain: false,
       isPost: true,
-      postID
+      postID: parseInt(ev.target.name)
     })
   }
 
@@ -41,7 +42,7 @@ class App extends Component {
       <div className="App">
         <Nav />
         {this.state.isMain && <Main
-          seetPostID={this.setPostID}
+          setPostID={this.setPostID}
         />}
         {this.state.isPost && <Post
           return2Main={this.return2Main}

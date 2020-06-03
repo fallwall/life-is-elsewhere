@@ -9,3 +9,8 @@
   width: 40%;
   margin: auto 30%;
 }
+
+.wordpress-excerpt-item-excerpt {
+  text-align: left;
+  text-indent: 5%;
+}
