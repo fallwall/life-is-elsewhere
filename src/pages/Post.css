@@ -1,0 +1,20 @@
+.page-post {
+  text-align: center;
+  padding: 5%;
+  margin: 5% 10%;
+  background-color:lightgrey;
+}
+
+.page-post-title {
+
+}
+
+.page-post-content {
+  text-align: left;
+  text-indent: 5%;
+}
+
+.page-post-content img {
+  width: 70%;
+  margin-left: 15%;
+}
