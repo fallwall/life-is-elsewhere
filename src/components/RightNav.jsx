@@ -11,7 +11,7 @@ const RightNav = (props) => {
       const body = document.body;
       const html = document.documentElement;
       const height = Math.max(body.scrollHeight, body.offsetHeight,
-      html.clientHeight, html.scrollHeight, html.offsetHeight);
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
       height !== 699 && setPageY(height);
       setPerc(-pageY + 1000 + props.prevScrollpos);
       console.log(perc);
@@ -21,7 +21,7 @@ const RightNav = (props) => {
   const bottomStyle = {
     height: `${perc}px`
   }
-
+  
   return (
     <>
       <div className="rightnav">
