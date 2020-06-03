@@ -16,9 +16,30 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: false,
-      isToBeVisited: false
+      isToBeVisited: false,
+      prevScrollpos: window.pageYOffset
     }
   }
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos < currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+
+    });
+  };
 
   setPostID = (ev) => {
     ev.preventDefault();
@@ -40,7 +61,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav />
+        <Nav
+          postID={this.state.postID}
+          prevScrollpos={this.state.prevScrollpos}
+        />
         {this.state.isMain && <Main
           setPostID={this.setPostID}
         />}

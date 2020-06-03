@@ -1,0 +1,12 @@
+.nav-progressbar {
+  position: relative;
+  height: 20px;
+  width: 350px;
+  border:1px solid black;
+}
+
+.filler {
+  background: red;
+  height: 100%;
+  transition: width .2s ease-in;
+}

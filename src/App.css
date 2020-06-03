@@ -1,14 +1,24 @@
 /* top nav */
 .topnav {
+  top: 0px;
   width: 100%;
   height: 10%;
+  flex-grow: 30% 70%;
+  z-index:20;
+  max-width: 2000px;
   min-height: 70px;
   display: flex;
   flex-direction: row;
-  flex-grow: 30% 70%;
+  align-content: center;
+  align-items:center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
 }
 .topnav-left,  .topnav-right {
   padding: 1%;
+  height: 100%;
 }
 
 .topnav-left {
@@ -23,8 +33,6 @@ text-align: end;
   background-color: pink;
   text-align: start;
 }
-
-/* nav */
 
 /* right nav */
 .rightnav, .rightnav-extended {
