@@ -7,7 +7,9 @@ const PostExcerpt = ({ children }) => {
     <div className="wordpress-excerpt-item">
       <div className="wordpress-excerpt-item-title"><h1>{children.title}</h1></div>
       <div className="wordpress-excerpt-item-img"><img src={children.featured_image} /></div>
-      <div className={`wordpress-excerpt-item-excerpt excerpt-${children.ID}`}>{children.excerpt}</div>
+      <div className={`wordpress-excerpt-item-excerpt excerpt-${children.ID}`}
+        dangerouslySetInnerHTML={{ __html: `${children.excerpt}` }}
+      ></div>
     </div>
   )
 }
