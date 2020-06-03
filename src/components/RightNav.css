@@ -73,3 +73,42 @@
     transform: rotate(-90deg);
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+
+    /* basic right nav */
+.rightnav, .rightnav-extended {
+  overflow-x: hidden;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: block;
+  border-right: 2px solid black;
+}
+
+.rightnav {
+  width: 10%;
+  max-width: 70px;
+  z-index: 100;
+}
+
+.rightnav-extended {
+  width: 31%;
+  max-width: 700px;
+  z-index: 90;
+  background-color: white;
+}
+
+  /* below is for the inversion part */
+  .rightnav-bottom{
+    bottom: 0;
+    height: 10%;
+    flex-grow: 30% 70%;
+    width: 10%;
+    max-width: 70px;
+    z-index: 100;
+    min-height: 70px;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+  }

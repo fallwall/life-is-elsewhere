@@ -8,7 +8,7 @@ const ProgressBar = (props) => {
     setScreenY(pageY);
   }, [])
 
-  console.log(props.prevScrollpos / screenY);
+  // console.log(props.prevScrollpos / screenY);
   const fillerStyle = {
     width: `${100 * props.prevScrollpos / screenY}%`
   }

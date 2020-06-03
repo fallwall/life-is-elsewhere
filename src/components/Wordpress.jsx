@@ -19,7 +19,6 @@ class Wordpress extends React.Component {
     console.log(this.state.posts);
   }
 
-
   render() {
     return (
       <div className="main-wordpress">

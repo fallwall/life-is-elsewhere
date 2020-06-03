@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './RightNav.css';
 
-const RightNav = () => {
+const RightNav = (props) => {
   const [burger, setBurger] = useState(false);
+  const [pageY, setPageY] = useState(0);
+  useEffect(() => {
+    const pageY = window.screen.height;
+    setPageY(pageY);
+  }, [])
+
   return (
     <>
       <div className="rightnav">
@@ -14,9 +20,11 @@ const RightNav = () => {
             <span className="hamburger-inner"></span>
           </span>
         </button>
+        <div className="rightnav-bottom">
+        </div>
       </div>
       {burger && (<div className="rightnav-extended">
-        here is long menu and stuff
+        here is extende menu.
       </div>)}
     </>
   )

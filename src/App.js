@@ -23,18 +23,25 @@ class App extends Component {
 
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
+
   }
 
   componentWillUnmount = () => {
     window.removeEventListener("scroll", this.handleScroll);
+
   }
 
   handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
+    const el = document.getElementsByClassName("footer");
     this.setState({
       prevScrollpos: currentScrollPos
     });
+    // console.log(1040 - el[0].getBoundingClientRect().bottom);
+    console.log(this.state.prevScrollpos + el[0].getBoundingClientRect().top);
+    // var offsetTop = window.pageYOffset + rect.top - rect.height;
   };
+
 
   setPostID = (ev) => {
     ev.preventDefault();
@@ -69,7 +76,9 @@ class App extends Component {
           postID={this.state.postID} />}
         {this.state.isVisited && <Visited />}
         {this.state.isToBeVisited && <ToBeVisited />}
-        <RightNav />
+        <RightNav
+
+        />
         <Footer />
       </div>
     );
