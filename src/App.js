@@ -30,14 +30,9 @@ class App extends Component {
   }
 
   handleScroll = () => {
-    const { prevScrollpos } = this.state;
-
     const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos < currentScrollPos;
-
     this.setState({
-      prevScrollpos: currentScrollPos,
-
+      prevScrollpos: currentScrollPos
     });
   };
 
@@ -56,6 +51,7 @@ class App extends Component {
       isPost: false,
       postID: null
     })
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -63,13 +59,13 @@ class App extends Component {
       <div className="App">
         <Nav
           postID={this.state.postID}
+          return2Main={this.return2Main}
           prevScrollpos={this.state.prevScrollpos}
         />
         {this.state.isMain && <Main
           setPostID={this.setPostID}
         />}
         {this.state.isPost && <Post
-          return2Main={this.return2Main}
           postID={this.state.postID} />}
         {this.state.isVisited && <Visited />}
         {this.state.isToBeVisited && <ToBeVisited />}

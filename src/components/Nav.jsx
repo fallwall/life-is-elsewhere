@@ -4,8 +4,9 @@ import ProgressBar from './ProgressBar';
 const Nav = (props) => {
   return (
     <div className="topnav">
-      <div className="topnav-left">
-        name
+      <div className="topnav-left"
+        onClick={props.return2Main}>
+        <h1>Life is Elsewhere</h1>
       </div>
       <div className="topnav-right">
         <ProgressBar
