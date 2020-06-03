@@ -102,7 +102,7 @@
   /* below is for the inversion part */
   .rightnav-bottom{
     bottom: 0;
-    height: 10%;
+    /* height: 10%; */
     flex-grow: 30% 70%;
     width: 10%;
     max-width: 70px;

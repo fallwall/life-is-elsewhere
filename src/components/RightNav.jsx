@@ -18,6 +18,10 @@ const RightNav = (props) => {
     }
   }, [props.prevScrollpos])
 
+  const bottomStyle = {
+    height: `${perc}px`
+  }
+
   return (
     <>
       <div className="rightnav">
@@ -29,7 +33,9 @@ const RightNav = (props) => {
             <span className="hamburger-inner"></span>
           </span>
         </button>
-        <div className={perc > 0 ? "rightnav-bottom" : "hidden"}>
+        <div
+          style={bottomStyle}
+          className={perc > 0 ? "rightnav-bottom" : "hidden"}>
         </div>
       </div>
       {burger && (<div className="rightnav-extended">
