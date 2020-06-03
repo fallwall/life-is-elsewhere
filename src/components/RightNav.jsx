@@ -4,10 +4,19 @@ import './RightNav.css';
 const RightNav = (props) => {
   const [burger, setBurger] = useState(false);
   const [pageY, setPageY] = useState(0);
+  const [perc, setPerc] = useState(0);
+
   useEffect(() => {
-    const pageY = window.screen.height;
-    setPageY(pageY);
-  }, [])
+    return () => {
+      const body = document.body;
+      const html = document.documentElement;
+      const height = Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight);
+      height !== 699 && setPageY(height);
+      setPerc(-pageY + 1000 + props.prevScrollpos);
+      console.log(perc);
+    }
+  }, [props.prevScrollpos])
 
   return (
     <>
@@ -20,7 +29,7 @@ const RightNav = (props) => {
             <span className="hamburger-inner"></span>
           </span>
         </button>
-        <div className="rightnav-bottom">
+        <div className={perc > 0 ? "rightnav-bottom" : "hidden"}>
         </div>
       </div>
       {burger && (<div className="rightnav-extended">

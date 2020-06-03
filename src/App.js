@@ -21,9 +21,21 @@ class App extends Component {
     }
   }
 
+
+
+// getHeight=()=> {
+//     setTimeout(function () {
+//       const body = document.body;
+//       const html = document.documentElement;
+//       const height = Math.max(body.scrollHeight, body.offsetHeight,
+//         html.clientHeight, html.scrollHeight, html.offsetHeight);
+//         console.log(height);
+//     }, 3000);
+// }
+
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
-
+    // this.getHeight();
   }
 
   componentWillUnmount = () => {
@@ -31,14 +43,26 @@ class App extends Component {
 
   }
 
+
+
   handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
     const el = document.getElementsByClassName("footer");
     this.setState({
       prevScrollpos: currentScrollPos
     });
+
+    const { prevScrollpos } = this.state;
+    
+    const body = document.body;
+    const html = document.documentElement;
+    const height = Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight);
+    const secHeight = el[0].offsetTop - el[0].clientHeight;
+    // console.log(height);
+    // this.state.prevScrollpos && console.log(height - this.state.prevScrollpos-1000);
     // console.log(1040 - el[0].getBoundingClientRect().bottom);
-    console.log(this.state.prevScrollpos + el[0].getBoundingClientRect().top);
+    // console.log(this.state.prevScrollpos + el[0].getBoundingClientRect().top);
     // var offsetTop = window.pageYOffset + rect.top - rect.height;
   };
 
@@ -77,9 +101,10 @@ class App extends Component {
         {this.state.isVisited && <Visited />}
         {this.state.isToBeVisited && <ToBeVisited />}
         <RightNav
-
+          prevScrollpos={this.state.prevScrollpos}
         />
-        <Footer />
+        <Footer
+        />
       </div>
     );
   }

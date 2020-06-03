@@ -99,7 +99,7 @@
   background-color: white;
 }
 
-  /* below is for the inversion part
+  /* below is for the inversion part */
   .rightnav-bottom{
     bottom: 0;
     height: 10%;
@@ -111,4 +111,4 @@
     overflow: hidden;
     position: fixed;
     background-color: black;
-  } */
+  }

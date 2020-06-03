@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer">
       <div className="footer-sec-1">
