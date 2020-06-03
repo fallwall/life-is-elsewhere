@@ -20,3 +20,14 @@ export const getPosts = (param = [], append=null) => {
   }
 }
 
+export const getOnePost = (postID, param = []) => {
+  try {
+    const resp  = axios.get(`${posts.url}/${postID}`, {
+      params: param
+    })
+    return resp;
+  } catch (error) {
+    console.error(error)
+  }
+}
+
