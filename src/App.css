@@ -45,6 +45,15 @@
   text-align: start;
 }
 
+.topnav-right-title {
+  font-size:1.2em;
+  font-weight: 500;
+}
+.topnav-right-title-hidden {
+  visibility: none;
+  color:transparent;
+}
+
 .topnav-hidden {
   background-color: transparent;
 }

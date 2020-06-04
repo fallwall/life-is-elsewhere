@@ -14,7 +14,7 @@ const Nav = (props) => {
           postID={props.postID}
           prevScrollpos={props.prevScrollpos}
         />
-        <div className="topnav-right-title">
+        <div className={props.postID === null? "topnav-right-title-hidden":"topnav-right-title"}>
           {title}
         </div>
       </div>
