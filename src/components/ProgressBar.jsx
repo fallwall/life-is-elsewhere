@@ -14,7 +14,7 @@ const ProgressBar = (props) => {
   }
 
   return (
-    <div className={props.postID !== null? "nav-progressbar":"hidden"}>
+    <div className={props.postID !== null? "nav-progressbar":"hidden-progressbar"}>
       <div className="filler" style={fillerStyle}/>
     </div>
   )

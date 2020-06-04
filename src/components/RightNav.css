@@ -1,5 +1,5 @@
 .hamburger {
-  padding: 15px 15px;
+  padding: 20px 15px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -77,19 +77,26 @@
     /* basic right nav */
 .rightnav, .rightnav-extended {
   overflow-x: hidden;
-  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   display: block;
-  border-right: 2px solid black;
+  border: none;
 }
 
 .rightnav {
   width: 10%;
   max-width: 70px;
   z-index: 100;
+  background-color: transparent;
+}
+
+.rightnav-top {
+  background-color: white;
+  height: 10%;
+  min-height: 70px;
+  border:none;
 }
 
 .rightnav-extended {
@@ -103,12 +110,12 @@
   .rightnav-bottom{
     bottom: 0;
     /* height: 10%; */
-    flex-grow: 30% 70%;
+    /* flex-grow: 30% 70%;
     width: 10%;
     max-width: 70px;
     z-index: 100;
     min-height: 70px;
     overflow: hidden;
-    position: fixed;
-    background-color: black;
+    position: fixed; */
+    /* background-color: black; */
   }

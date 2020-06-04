@@ -8,7 +8,7 @@ const Nav = (props) => {
         onClick={props.return2Main}>
         <h1>Life is Elsewhere</h1>
       </div>
-      <div className="topnav-right">
+      <div className={props.postID === null? "topnav-hidden":"topnav-right"}>
         <ProgressBar
           postID={props.postID}
           prevScrollpos={props.prevScrollpos}

@@ -16,7 +16,7 @@ class Post extends Component {
     this.setState({
       currentPost
     })
-    console.log(this.state.currentPost);
+    // console.log(this.state.currentPost);
   }
 
   render() {

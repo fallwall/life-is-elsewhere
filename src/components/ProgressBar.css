@@ -11,3 +11,8 @@
   height: 100%;
   transition: width .1s ease-in;
 }
+
+.hidden-progressbar {
+  visibility:none;
+  background-color: transparent;
+}
