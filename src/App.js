@@ -21,29 +21,15 @@ class App extends Component {
     }
   }
 
-
-
-// getHeight=()=> {
-//     setTimeout(function () {
-//       const body = document.body;
-//       const html = document.documentElement;
-//       const height = Math.max(body.scrollHeight, body.offsetHeight,
-//         html.clientHeight, html.scrollHeight, html.offsetHeight);
-//         console.log(height);
-//     }, 3000);
-// }
-
   componentDidMount = () => {
+    localStorage.removeItem('postTitle');
     window.addEventListener("scroll", this.handleScroll);
-    // this.getHeight();
   }
 
   componentWillUnmount = () => {
     window.removeEventListener("scroll", this.handleScroll);
 
   }
-
-
 
   handleScroll = () => {
     const currentScrollPos = window.pageYOffset;

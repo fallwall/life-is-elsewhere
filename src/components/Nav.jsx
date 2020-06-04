@@ -2,6 +2,7 @@ import React from 'react';
 import ProgressBar from './ProgressBar';
 
 const Nav = (props) => {
+  const title = localStorage.getItem('postTitle');
   return (
     <div className="topnav">
       <div className="topnav-left"
@@ -14,7 +15,7 @@ const Nav = (props) => {
           prevScrollpos={props.prevScrollpos}
         />
         <div className="topnav-right-title">
-          tittle
+          {title}
         </div>
       </div>
     </div>

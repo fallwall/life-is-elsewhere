@@ -16,7 +16,8 @@ class Post extends Component {
     this.setState({
       currentPost
     })
-    // console.log(this.state.currentPost);
+    // console.log(this.state.currentPost.title);
+    localStorage.setItem('postTitle', this.state.currentPost.title);
   }
 
   render() {

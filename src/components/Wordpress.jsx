@@ -11,6 +11,7 @@ class Wordpress extends React.Component {
   }
 
   componentDidMount = async () => {
+    localStorage.removeItem('postTitle');
     const resp = await getPosts();
     const posts = resp["data"].posts;
     this.setState({
