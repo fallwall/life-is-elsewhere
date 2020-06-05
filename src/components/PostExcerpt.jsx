@@ -4,17 +4,17 @@ import './PostExcerpt.css';
 
 
 
-const PostExcerpt = ({ children }) => {
+const PostExcerpt = (props) => {
   return (
     <div
-      className="wordpress-excerpt-item">
-      <div className="wordpress-excerpt-item-title"><h1>{children.title}</h1></div>
-      {/* <div style={{   background: `url(${children.featured_image}) 50% 50% no-repeat`, 
-      width: `250px`,
-      height: `250px` }}></div> */}
-      <div className="wordpress-excerpt-item-img"><img src={children.featured_image} /></div>
-      <div className={`wordpress-excerpt-item-excerpt excerpt-${children.ID}`}
-        dangerouslySetInnerHTML={{ __html: `${children.excerpt}` }}
+      className="wordpress-excerpt-item"
+      onClick={()=>props.setPostID(props.blog.ID)}
+      id={props.blog.ID}
+    >
+      <div className="wordpress-excerpt-item-title"><h1>{props.blog.title}</h1></div>
+      <div name={props.blog.ID} className="wordpress-excerpt-item-img"><img src={props.blog.featured_image} /></div>
+      <div className={`wordpress-excerpt-item-excerpt excerpt-${props.blog.ID}`}
+        dangerouslySetInnerHTML={{ __html: `${props.blog.excerpt}` }}
       ></div>
     </div>
   )

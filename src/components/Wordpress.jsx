@@ -25,8 +25,8 @@ class Wordpress extends React.Component {
       <div className="main-wordpress" id="main-wordpress">
         {this.state.posts.map(p =>
           <>
-            <PostExcerpt key={p.ID}>{p}</PostExcerpt>
-            <button onClick={this.props.setPostID} name={p.ID}>ReadMore</button>
+            <PostExcerpt key={p.ID} setPostID={this.props.setPostID} blog={p} />
+           {/* <div onClick={this.props.setPostID} name={p.ID}>ReadMore</div> */}
           </>)}
       </div>
     )

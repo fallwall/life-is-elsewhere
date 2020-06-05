@@ -6,8 +6,8 @@
 }
 
 .wordpress-excerpt-item-img img {
- object-fit: cover; 
- width: 50%;
+ 
+ width: 60%;
 }
 
 .wordpress-excerpt-item-excerpt {

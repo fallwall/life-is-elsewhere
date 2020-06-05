@@ -39,7 +39,7 @@ class App extends Component {
     });
 
     const { prevScrollpos } = this.state;
-    
+
     const body = document.body;
     const html = document.documentElement;
     const height = Math.max(body.scrollHeight, body.offsetHeight,
@@ -53,12 +53,11 @@ class App extends Component {
   };
 
 
-  setPostID = (ev) => {
-    ev.preventDefault();
+  setPostID = (postID) => {
     this.setState({
       isMain: false,
       isPost: true,
-      postID: parseInt(ev.target.name)
+      postID: parseInt(postID)
     })
   }
 
