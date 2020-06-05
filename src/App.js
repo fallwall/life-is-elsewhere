@@ -38,13 +38,13 @@ class App extends Component {
       prevScrollpos: currentScrollPos
     });
 
-    const { prevScrollpos } = this.state;
+    // const { prevScrollpos } = this.state;
 
-    const body = document.body;
-    const html = document.documentElement;
-    const height = Math.max(body.scrollHeight, body.offsetHeight,
-      html.clientHeight, html.scrollHeight, html.offsetHeight);
-    const secHeight = el[0].offsetTop - el[0].clientHeight;
+    // const body = document.body;
+    // const html = document.documentElement;
+    // const height = Math.max(body.scrollHeight, body.offsetHeight,
+    //   html.clientHeight, html.scrollHeight, html.offsetHeight);
+    // const secHeight = el[0].offsetTop - el[0].clientHeight;
     // console.log(height);
     // this.state.prevScrollpos && console.log(height - this.state.prevScrollpos-1000);
     // console.log(1040 - el[0].getBoundingClientRect().bottom);

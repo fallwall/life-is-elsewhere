@@ -1,13 +1,35 @@
 .wordpress-excerpt-item {
   text-align: center;
   padding: 2%;
-  margin: 2% 10%;
+  margin: 2% 0;
   background-color:lightblue;
+}
+.wordpress-excerpt-item-title {
+  width: 104%;
+  margin: 0 -2%;
+  height: 10%;
+  min-height: 70px;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+
+.wordpress-excerpt-item-title h1 {
+  margin: auto;
+  line-height: 200%;
+}
+
+.wordpress-excerpt-item-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 60% 40%;
 }
 
 .wordpress-excerpt-item-img img {
- 
- width: 60%;
+ object-fit: contain;
+ width: 100%;
+ margin-left: -6.5%;
 }
 
 .wordpress-excerpt-item-excerpt {
