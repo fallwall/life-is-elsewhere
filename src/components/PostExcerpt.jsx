@@ -15,7 +15,11 @@ const PostExcerpt = (props) => {
         <h1>{props.blog.title} >>> </h1>
       </div>
       <div className="wordpress-excerpt-item-wrap">
-        <div name={props.blog.ID} className="wordpress-excerpt-item-img"><img src={props.blog.featured_image} /></div>
+        <div name={props.blog.ID} className="wordpress-excerpt-item-img">
+          <img
+            alt="post featured"
+            src={props.blog.featured_image} />
+        </div>
         <div className={`wordpress-excerpt-item-excerpt excerpt-${props.blog.ID}`}
           dangerouslySetInnerHTML={{ __html: `${props.blog.excerpt}` }}
         ></div>

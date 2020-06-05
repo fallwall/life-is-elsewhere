@@ -22,12 +22,15 @@ class Wordpress extends React.Component {
 
   render() {
     return (
-      <div className="main-wordpress" id="main-wordpress">
+      <div
+        className="main-wordpress"
+        id="main-wordpress">
         {this.state.posts.map(p =>
-          <>
-            <PostExcerpt key={p.ID} setPostID={this.props.setPostID} blog={p} />
-           {/* <div onClick={this.props.setPostID} name={p.ID}>ReadMore</div> */}
-          </>)}
+          <PostExcerpt key={p.ID}
+            setPostID={this.props.setPostID}
+            blog={p}
+          />
+        )}
       </div>
     )
   }

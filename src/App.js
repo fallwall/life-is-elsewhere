@@ -33,7 +33,7 @@ class App extends Component {
 
   handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const el = document.getElementsByClassName("footer");
+    // const el = document.getElementsByClassName("footer");
     this.setState({
       prevScrollpos: currentScrollPos
     });
@@ -70,6 +70,28 @@ class App extends Component {
     window.scrollTo(0, 0);
   }
 
+  go2Visited = () => {
+    this.setState({
+      isMain: false,
+      isPost: false,
+      postID: null,
+      isVisited: true,
+      isToBeVisited: false,
+    })
+    window.scrollTo(0, 0);
+  }
+
+  go2ToBeVisited = () => {
+    this.setState({
+      isMain: false,
+      isPost: false,
+      postID: null,
+      isVisited: false,
+      isToBeVisited: true,
+    })
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="App">
@@ -87,6 +109,8 @@ class App extends Component {
         {this.state.isToBeVisited && <ToBeVisited />}
         <RightNav
           prevScrollpos={this.state.prevScrollpos}
+          go2Visited={this.go2Visited}
+          go2ToBeVisited={this.go2ToBeVisited}
         />
         <Footer
         />

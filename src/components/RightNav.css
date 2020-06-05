@@ -102,13 +102,32 @@
 .rightnav-extended {
   width: 32%;
   max-width: 700px;
-  z-index: 90;
+  z-index: 70;
   background-color: white;
 }
 
+.rightnav-extended ul li {
+  list-style-type: none;
+  line-height: 3em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.rightnav-extended ul li:hover {
+  cursor: pointer;
+  background-color:black;
+  color:white;
+  transition: all 0.2 ease;
+}
+
+.rightnav-extended ul {
+  margin-top: 40vh;
+  margin-right: 7vw;
+}
+
   /* below is for the inversion part */
-  .rightnav-bottom{
-    bottom: 0;
+  /* .rightnav-bottom{
+    bottom: 0; */
     /* height: 10%; */
     /* flex-grow: 30% 70%;
     width: 10%;
@@ -118,4 +137,4 @@
     overflow: hidden;
     position: fixed; */
     /* background-color: black; */
-  }
+  /* } */

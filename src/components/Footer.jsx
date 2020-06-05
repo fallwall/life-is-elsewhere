@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Footer = (props) => {
   return (
@@ -9,15 +9,15 @@ const Footer = (props) => {
       </div>
       <div className="footer-sec-2">
         <h2>Contact</h2>
-        <p>info@tibbyelsewhere.com</p>
+        <p>hello@tibbyxu.com</p>
       </div>
       <div className="footer-sec-3">
         <h2>Socials</h2>
-        <p>Instagram</p>
+        <p><a href="http://www.instagram.com/fallwall19">Instagram</a></p>
       </div>
       <div className="footer-sec-4">
         <h2>About</h2>
-        <p>Tibby Xu</p>
+        <p><a href="http://www.tibbyxu.com">Tibby Xu</a></p>
       </div>
     </div>
   )
