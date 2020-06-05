@@ -12,7 +12,7 @@ const PostExcerpt = (props) => {
       id={props.blog.ID}
     >
       <div className="wordpress-excerpt-item-title">
-        <h1>{props.blog.title}</h1>
+        <h1>{props.blog.title} >>> </h1>
       </div>
       <div className="wordpress-excerpt-item-wrap">
         <div name={props.blog.ID} className="wordpress-excerpt-item-img"><img src={props.blog.featured_image} /></div>
