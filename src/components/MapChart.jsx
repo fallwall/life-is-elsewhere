@@ -26,14 +26,24 @@ const markers = [
     coordinates: [-77.0428, -12.0464]
   },
   {
+    markerOffset: -30,
+    name: "Cusco",
+    coordinates: [-72.0094615,-13.5298426]
+  },
+  {
     markerOffset: 15,
     name: "Panama City",
     coordinates: [-79.5932, 9.0814]
   },
   {
-    markerOffset: 15,
+    markerOffset: -30,
     name: "Belize City",
-    coordinates: [-88.2295,17.5057]
+    coordinates: [-88.2295, 17.5057]
+  },
+  {
+    markerOffset: 15,
+    name: "San Salvador",
+    coordinates: [-89.2503573,13.6915591]
   },
   {
     markerOffset: -30,
@@ -48,7 +58,7 @@ const MapChart = () => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [58, 20, 0],
-        scale: 400
+        scale: 350
       }}
     >
       <Geographies geography={geoUrl}>
