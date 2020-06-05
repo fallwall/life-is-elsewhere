@@ -65,7 +65,9 @@ class App extends Component {
     this.setState({
       isMain: true,
       isPost: false,
-      postID: null
+      postID: null,
+      isVisited: false,
+      isToBeVisited: false
     })
     window.scrollTo(0, 0);
   }
@@ -76,7 +78,7 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: true,
-      isToBeVisited: false,
+      isToBeVisited: false
     })
     window.scrollTo(0, 0);
   }
@@ -87,7 +89,7 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: false,
-      isToBeVisited: true,
+      isToBeVisited: true
     })
     window.scrollTo(0, 0);
   }

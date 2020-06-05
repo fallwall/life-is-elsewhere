@@ -12,59 +12,59 @@ const geoUrl =
 const markers = [
   {
     markerOffset: -30,
-    name: "Buenos Aires",
-    coordinates: [-58.3816, -34.6037]
-  },
-  {
-    markerOffset: 15,
-    name: "Quito",
-    coordinates: [-78.4678, -0.1807]
-  },
-  {
-    markerOffset: 15,
-    name: "Lima",
-    coordinates: [-77.0428, -12.0464]
+    name: "London",
+    coordinates: [-0.3824689, 51.5287336]
   },
   {
     markerOffset: -30,
-    name: "Cusco",
-    coordinates: [-72.0094615,-13.5298426]
+    name: "Berlin",
+    coordinates: [13.3539757, 52.5069296]
   },
   {
     markerOffset: 15,
-    name: "Panama City",
-    coordinates: [-79.5932, 9.0814]
-  },
-  {
-    markerOffset: -30,
-    name: "Belize City",
-    coordinates: [-88.2295, 17.5057]
+    name: "Barcelone",
+    coordinates: [2.1532286, 41.3910341]
   },
   {
     markerOffset: 15,
-    name: "San Salvador",
-    coordinates: [-89.2503573,13.6915591]
+    name: "Madrid",
+    coordinates: [-3.6922479, 40.4234964]
   },
   {
-    markerOffset: -30,
-    name: "São Paulo",
-    coordinates: [-46.9278, -23.5767]
+    markerOffset: 15,
+    name: "Seville",
+    coordinates: [-6.0252703, 37.3754864]
+  },
+  {
+    markerOffset: 15,
+    name: "Oslo",
+    coordinates: [10.7463157, 59.9132349]
+  },
+  {
+    markerOffset: 15,
+    name: "Stockholm",
+    coordinates: [17.8416267, 59.3262416]
+  },
+  {
+    markerOffset: 15,
+    name: "Abisko",
+    coordinates: [18.8256561, 68.3494148]
   }
 ];
 
-const MapChart = () => {
+const MapChart_EU = () => {
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [58, 20, 0],
-        scale: 350
+        rotate: [-12, -61, 3],
+        scale: 600
       }}
     >
       <Geographies geography={geoUrl}>
         {({ geographies }) =>
           geographies
-            .filter(d => d.properties.REGION_UN === "Americas")
+            .filter(d => d.properties.REGION_UN === "Europe")
             .map(geo => (
               <Geography
                 key={geo.rsmKey}
@@ -101,4 +101,4 @@ const MapChart = () => {
   );
 };
 
-export default MapChart;
+export default MapChart_EU;
