@@ -2,16 +2,24 @@
   text-align: center;
   padding: 5%;
   margin: 5% 10%;
-  background-color:lightgrey;
 }
 
 .page-post-title {
-
+ background-color: black;
+ color: white;
+ height: 10%;
+ min-height: 70px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .page-post-content {
+  font-family: 'Muli', sans-serif;
   text-align: left;
   text-indent: 5%;
+  line-height: 2em;
+  margin-top: 5%;
 }
 
 .page-post-content img {

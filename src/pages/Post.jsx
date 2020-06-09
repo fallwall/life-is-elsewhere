@@ -16,14 +16,15 @@ class Post extends Component {
     this.setState({
       currentPost
     })
-    // console.log(this.state.currentPost.title);
     localStorage.setItem('postTitle', this.state.currentPost.title);
   }
 
   render() {
     return (
       <div className="page-post">
-        <div className="page-post-title"><h1>{this.state.currentPost.title}</h1></div>
+        <div className="page-post-title">
+          <h1>{this.state.currentPost.title}</h1>
+        </div>
         <div className="page-post-content"
           dangerouslySetInnerHTML={{ __html: `${this.state.currentPost.content}` }}
         ></div>

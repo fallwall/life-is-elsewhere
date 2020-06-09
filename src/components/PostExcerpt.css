@@ -44,11 +44,11 @@
   text-align: left;
   text-indent: 15%;
   width: 100%;
-  /* padding-top: 5%; */
 }
 
 .wordpress-excerpt-item-excerpt p {
   font-size: 1.5em;
   line-height: 180%;
+  font-family: 'Muli', sans-serif;
 }
 
