@@ -4,6 +4,7 @@ import Main from './pages/Main';
 import Post from './pages/Post';
 import Visited from './pages/Visited';
 import ToBeVisited from './pages/ToBeVisited';
+import WorldMap from './pages/WorldMap';
 import RightNav from './components/RightNav';
 import Footer from './components/Footer';
 import './App.css';
@@ -17,6 +18,7 @@ class App extends Component {
       postID: null,
       isVisited: false,
       isToBeVisited: false,
+      isWorldMap: false,
       prevScrollpos: window.pageYOffset
     }
   }
@@ -67,7 +69,8 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: false,
-      isToBeVisited: false
+      isToBeVisited: false,
+      isWorldMap: false
     })
     window.scrollTo(0, 0);
   }
@@ -78,7 +81,8 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: true,
-      isToBeVisited: false
+      isToBeVisited: false,
+      isWorldMap: false
     })
     window.scrollTo(0, 0);
   }
@@ -89,7 +93,20 @@ class App extends Component {
       isPost: false,
       postID: null,
       isVisited: false,
-      isToBeVisited: true
+      isToBeVisited: true,
+      isWorldMap: false
+    })
+    window.scrollTo(0, 0);
+  }
+
+  go2WorldMap = () => {
+    this.setState({
+      isMain: false,
+      isPost: false,
+      postID: null,
+      isVisited: false,
+      isToBeVisited: false,
+      isWorldMap: true
     })
     window.scrollTo(0, 0);
   }
@@ -109,10 +126,12 @@ class App extends Component {
           postID={this.state.postID} />}
         {this.state.isVisited && <Visited />}
         {this.state.isToBeVisited && <ToBeVisited />}
+        {this.state.isWorldMap && <WorldMap />}
         <RightNav
           prevScrollpos={this.state.prevScrollpos}
           go2Visited={this.go2Visited}
           go2ToBeVisited={this.go2ToBeVisited}
+          go2WorldMap={this.go2WorldMap}
         />
         <Footer
         />

@@ -2,7 +2,7 @@ import React from 'react';
 import MapChart_SA from './MapChart_SA';
 import MapChart_EU from './MapChart_EU';
 
-const WorldMap = () => {
+const Maps = () => {
   return (
     <div className="world-map">
       {/* <MapChart_SA /> */}
@@ -11,4 +11,4 @@ const WorldMap = () => {
   )
 }
 
-export default WorldMap;
+export default Maps;

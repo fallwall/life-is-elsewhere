@@ -3,12 +3,12 @@ import './RightNav.css';
 
 const RightNav = (props) => {
   const [burger, setBurger] = useState(false);
-   useEffect(() => {
+  useEffect(() => {
     return () => {
       setBurger(false);
     }
-   }, [props])
-  
+  }, [props])
+
   // const [pageY, setPageY] = useState(0);
   // const [perc, setPerc] = useState(0);
 
@@ -20,7 +20,7 @@ const RightNav = (props) => {
   //       html.clientHeight, html.scrollHeight, html.offsetHeight);
   //     height !== 699 && setPageY(height);
   //     setPerc(-pageY + 1040 + props.prevScrollpos);
-      // console.log(perc);
+  // console.log(perc);
   //   }
   // }, [props.prevScrollpos])
 
@@ -49,7 +49,7 @@ const RightNav = (props) => {
       {
         burger && (<div className="rightnav-extended">
           <ul>
-            <li>World Map</li>
+            <li onClick={props.go2WorldMap}>World Map</li>
             <li onClick={props.go2ToBeVisited}>Bucket List</li>
             <li onClick={props.go2Visited}>Visited</li>
           </ul>
