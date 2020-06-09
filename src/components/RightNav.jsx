@@ -49,9 +49,9 @@ const RightNav = (props) => {
       {
         burger && (<div className="rightnav-extended">
           <ul>
-            <li onClick={props.go2WorldMap}>World Map</li>
-            <li onClick={props.go2ToBeVisited}>Bucket List</li>
-            <li onClick={props.go2Visited}>Visited</li>
+            <li onClick={props.go2WorldMap}>World Map >>></li>
+            <li onClick={props.go2ToBeVisited}>Bucket List >>></li>
+            <li onClick={props.go2Visited}>Visited >>></li>
           </ul>
         </div>)
       }
