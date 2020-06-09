@@ -9,9 +9,8 @@ const Visited = () => {
   return (
     <div className="visited-container">
       <div className="grid-container">
-        <p>Tile of some sort.</p>
         <Grid brakePoints={brakePoints}>
-          {data.visited.map(c => <Tile src={c.img} />)}
+          {data.visited.map(c => <Tile key={c.id} data={c} />)}
         </Grid>
       </div>
     </div>
