@@ -91,37 +91,38 @@
     {
       "id": 1,
       "city": "Budapest",
-      "coordinates": "52°31′12″N 13°24′18″E",
-      "img": "https://i.imgur.com/dRWeNXJ.jpg",
-      "url": "http://tibbyelsewhere.wordpress.com"
+      "coordinates": "47°29′N 19°03′E",
+      "img": "https://i.imgur.com/7DCHGW4.jpg"
     },
     {
       "id": 2,
       "city": "Cape Town",
-      "coordinates": "41°23′N 2°11′E",
-      "img": "https://i.imgur.com/vvmqEzO.jpg",
-      "url": "http://tibbyelsewhere.wordpress.com"
+      "coordinates": "33°55′S 18°25′E",
+      "img": "https://i.imgur.com/zPImRoc.jpg"
     },
     {
       "id": 3,
       "city": "Istanbul",
-      "coordinates": "37.39°N 5.99°W",
-      "img": "https://i.imgur.com/vvmqEzO.jpg",
-      "url": "http://tibbyelsewhere.wordpress.com"
+      "coordinates": "41°00′N 28°57′E",
+      "img": "https://i.imgur.com/01UlVhG.jpg"
     },
     {
       "id": 4,
       "city": "Jerusalem",
-      "coordinates": "37.39°N 5.99°W",
-      "img": "https://i.imgur.com/vvmqEzO.jpg",
-      "url": "Jewish, Christian, Arabic mash. And clay stuff."
+      "coordinates": "31°47′N 35°13′E",
+      "img": "https://i.imgur.com/uBC8QB3.jpg"
     },
     {
       "id": 5,
       "city": "Alexandria",
-      "coordinates": "37.39°N 5.99°W",
-      "img": "https://i.imgur.com/vvmqEzO.jpg",
-      "url": "Jewish, Christian, Arabic mash. And clay stuff."
+      "coordinates": "31°12′N 29°55′E",
+      "img": "https://i.imgur.com/4jLwyBI.jpg"
+    },
+    {
+      "id": 6,
+      "city": "Warszawa",
+      "coordinates": "52°14′N 21°1′E",
+      "img": "https://i.imgur.com/sWxHPyW.jpg"
     }
   ]
 }
