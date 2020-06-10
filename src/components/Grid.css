@@ -65,9 +65,10 @@
 
 .bottom-right a {
   text-decoration: none;
+  font-family: 'Muli', sans-serif;
   color:white;
   background: lightgray;
-  padding: 5px;
+  padding: 7px 10px;
 }
 
 .hidden, .hidden {

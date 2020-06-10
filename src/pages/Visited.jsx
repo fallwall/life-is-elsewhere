@@ -3,7 +3,7 @@ import Grid from '../components/Grid';
 import Tile from '../components/Tile';
 import data from '../data/cities.json';
 
-const brakePoints = [500, 840, 1260];
+const brakePoints = [840, 1260];
 
 const Visited = () => {
   return (
