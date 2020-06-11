@@ -9,24 +9,6 @@ const RightNav = (props) => {
     }
   }, [props])
 
-  // const [pageY, setPageY] = useState(0);
-  // const [perc, setPerc] = useState(0);
-
-  // useEffect(() => {
-  //   return () => {
-  //     const body = document.body;
-  //     const html = document.documentElement;
-  //     const height = Math.max(body.scrollHeight, body.offsetHeight,
-  //       html.clientHeight, html.scrollHeight, html.offsetHeight);
-  //     height !== 699 && setPageY(height);
-  //     setPerc(-pageY + 1040 + props.prevScrollpos);
-  // console.log(perc);
-  //   }
-  // }, [props.prevScrollpos])
-
-  // const bottomStyle = {
-  //   height: `${perc}px`
-  // }
 
   return (
     <>
@@ -41,10 +23,7 @@ const RightNav = (props) => {
             </span>
           </button>
         </div>
-        {/* <div
-          style={bottomStyle}
-          className={perc > 0 ? "rightnav-bottom" : "hidden"}>
-        </div> */}
+
       </div>
       {
         burger && (<div className="rightnav-extended">

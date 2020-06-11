@@ -19,7 +19,6 @@ class Post extends Component {
     localStorage.setItem('postTitle', this.state.currentPost.title);
   }
 
-
   render() {
     return (
       <div className="page-post">

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ProgressBar from './ProgressBar';
 
 class Nav extends Component {
   constructor(props) {
@@ -23,9 +22,6 @@ class Nav extends Component {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     const scrolled = `${scrollPx / winHeightPx * 100}%`;
-
-    console.log(scrolled);
-
     this.setState({
       scrolled: scrolled
     });
@@ -42,7 +38,7 @@ class Nav extends Component {
       left: 0,
       width: "120%",
       margin: "0 -4% auto -1.4%"
-      // zIndex: 99
+
     };
 
     const progressBarStyle = {
@@ -59,7 +55,7 @@ class Nav extends Component {
           <h1>Life is Elsewhere</h1>
         </div>
         <div className={this.props.postID === null ? "topnav-hidden" : "topnav-right"}>
-  
+
           <div className="progress-container" style={progressContainerStyle}>
             <div className="progress-bar" style={progressBarStyle} />
           </div>
@@ -73,4 +69,4 @@ class Nav extends Component {
   }
 }
 
-  export default Nav;
+export default Nav;

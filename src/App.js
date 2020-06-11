@@ -18,42 +18,13 @@ class App extends Component {
       postID: null,
       isVisited: false,
       isToBeVisited: false,
-      isWorldMap: false,
-      prevScrollpos: window.pageYOffset
+      isWorldMap: false
     }
   }
 
   componentDidMount = () => {
     localStorage.removeItem('postTitle');
-    window.addEventListener("scroll", this.handleScroll);
   }
-
-  componentWillUnmount = () => {
-    window.removeEventListener("scroll", this.handleScroll);
-
-  }
-
-  handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    // const el = document.getElementsByClassName("footer");
-    this.setState({
-      prevScrollpos: currentScrollPos
-    });
-
-    // const { prevScrollpos } = this.state;
-
-    // const body = document.body;
-    // const html = document.documentElement;
-    // const height = Math.max(body.scrollHeight, body.offsetHeight,
-    //   html.clientHeight, html.scrollHeight, html.offsetHeight);
-    // const secHeight = el[0].offsetTop - el[0].clientHeight;
-    // console.log(height);
-    // this.state.prevScrollpos && console.log(height - this.state.prevScrollpos-1000);
-    // console.log(1040 - el[0].getBoundingClientRect().bottom);
-    // console.log(this.state.prevScrollpos + el[0].getBoundingClientRect().top);
-    // var offsetTop = window.pageYOffset + rect.top - rect.height;
-  };
-
 
   setPostID = (postID) => {
     this.setState({
@@ -117,7 +88,6 @@ class App extends Component {
         <Nav
           postID={this.state.postID}
           return2Main={this.return2Main}
-          prevScrollpos={this.state.prevScrollpos}
         />
         {this.state.isMain && <Main
           setPostID={this.setPostID}
@@ -128,7 +98,6 @@ class App extends Component {
         {this.state.isToBeVisited && <ToBeVisited />}
         {this.state.isWorldMap && <WorldMap />}
         <RightNav
-          prevScrollpos={this.state.prevScrollpos}
           go2Visited={this.go2Visited}
           go2ToBeVisited={this.go2ToBeVisited}
           go2WorldMap={this.go2WorldMap}
